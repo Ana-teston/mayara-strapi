@@ -17,12 +17,6 @@
     },
     "color": {
       "type": "string"
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::project.project",
-      "inversedBy": "work_categories"
     }
   }
 }

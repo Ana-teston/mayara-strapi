@@ -60,12 +60,6 @@
         "audios"
       ]
     },
-    "work_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::work-category.work-category",
-      "mappedBy": "projects"
-    },
     "result": {
       "type": "string"
     },
@@ -74,6 +68,12 @@
     },
     "team": {
       "type": "text"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "projects"
     }
   }
 }
